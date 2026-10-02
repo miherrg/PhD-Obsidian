@@ -1,0 +1,1 @@
+Un [[functor]] ${}F:\mathcal{A} \to \mathcal{B}{}$ entre [[Categoría preaditiva|categorías preaditivas]] se dice *aditivo* si cada ${}\text{Hom}_{\mathcal{A}}(A, A') \to \text{Hom}_{\mathcal{B}}(FA, FA'){}$ es un homomorfismo de grupos.

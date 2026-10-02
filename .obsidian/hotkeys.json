@@ -1,0 +1,20 @@
+{
+  "wrangle-todos:todo-wrangler": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "cdrawer:insert-commutative-diagram": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "C"
+    }
+  ]
+}

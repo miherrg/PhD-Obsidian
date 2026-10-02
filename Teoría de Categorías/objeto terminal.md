@@ -1,0 +1,1 @@
+Dada una categoría ${}\mathcal{A}{},$ diremos que un objeto ${}A \in \mathcal{A}{}$ es *terminal* si para todo objeto ${}B\in \mathcal{A}{}$ existe un único morfismo ${}f\in \text{Hom}_{}(B, A){}$.
