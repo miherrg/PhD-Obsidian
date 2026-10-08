@@ -20,7 +20,13 @@
               "icon": "lucide-file",
               "title": "Homología"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "dfbcf78ecfbaa0af",
+        "type": "tabs",
+        "children": [
           {
             "id": "3c5a5cb065462364",
             "type": "leaf",
@@ -194,31 +200,31 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "cdrawer:Insert commutative diagram": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "cdrawer:Insert commutative diagram": false
+      "bases:Create new base": false
     }
   },
   "active": "1111de80eeb3d6ec",
   "lastOpenFiles": [
-    "Teoría de Categorías/functor.md",
-    "Homología/Homología.md",
-    "Homología/Complejo de cadenas.md",
-    "Homología/Morfismo de cadenas.md",
-    "Teoría de Categorías/Epimorfismo.md",
     "Teoría de Categorías/Conúcleo.md",
-    "Teoría de Categorías/Monomorfismo.md",
+    "Homología/Homología.md",
+    "Teoría de Categorías/Epimorfismo.md",
+    "Homología/Morfismo de cadenas.md",
     "Teoría de Categorías/Núcleo.md",
+    "Teoría de Categorías/Imagen.md",
+    "Teoría de Categorías/functor.md",
+    "Homología/Complejo de cadenas.md",
+    "Teoría de Categorías/Monomorfismo.md",
     "Teoría de Categorías/Categoría abeliana.md",
     "Teoría de Categorías/producto.md",
     "Teoría de Categorías/Categoría aditiva.md",
     "Teoría de Categorías/Categoría preaditiva.md",
-    "Teoría de Categorías/Imagen.md",
     "Homología/Morfismos de escisión.md",
     "Homología/sucesión exacta.md",
     "Teoría de Categorías/Categoría.md",
