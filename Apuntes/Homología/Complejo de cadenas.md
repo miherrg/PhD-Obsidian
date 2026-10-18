@@ -1,5 +1,5 @@
 # Complejo de cadenas
-Sea ${}\mathcal{A}{}$ una [[categoría abeliana]]. Un complejo de cadenas de ${}\mathcal{A}{}$, ${}C{}$, es una familia ${}\{C_{n}\}_{n \in \mathbb{Z}}{}$ de objetos de ${}\mathcal{A}{}$, junto a una familia de morfismos, ${}\{ d_{n} : C_{n} \to C_{n-1} \}_{n \in \mathbb{Z}}{}$ tales que ${}d_{n}\circ d_{n+1} = 0{}$. Esta última propiedad es equivalente a decir que, ${}\forall n \in \mathbb{Z}{}$ existe un único [[monomorfismo]], ${}\varphi_{n}:\text{Im}\,d_{n+1}\to \text{Ker}\,d_{n}{}$. En efecto, notemos que para todo  ${}n \in \mathbb{Z}{}$ tenemos el siguiente diagrama conmutativo:
+Sea ${}\mathcal{A}{}$ una [[Categoría abeliana]]. Un complejo de cadenas de ${}\mathcal{A}{}$, ${}C{}$, es una familia ${}\{C_{n}\}_{n \in \mathbb{Z}}{}$ de objetos de ${}\mathcal{A}{}$, junto a una familia de morfismos, ${}\{ d_{n} : C_{n} \to C_{n-1} \}_{n \in \mathbb{Z}}{}$ tales que ${}d_{n}\circ d_{n+1} = 0{}$. Esta última propiedad es equivalente a decir que, ${}\forall n \in \mathbb{Z}{}$ existe un único [[Monomorfismo]], ${}\varphi_{n}:\text{Im}\,d_{n+1}\to \text{Ker}\,d_{n}{}$. En efecto, notemos que para todo  ${}n \in \mathbb{Z}{}$ tenemos el siguiente diagrama conmutativo:
 ```cd
 {
   "version": 1,
@@ -9,12 +9,12 @@ Sea ${}\mathcal{A}{}$ una [[categoría abeliana]]. Un complejo de cadenas de ${}
     {
       "row": 0,
       "col": 1,
-      "label": "\\text{Im}\\,d_{n+1}"
+      "label": "{\\text{Im}\\,d_{n+1}}"
     },
     {
       "row": 0,
       "col": 3,
-      "label": "\\text{Ker}\\, d_n"
+      "label": "{\\text{Ker}\\, d_n}"
     },
     {
       "row": 1,
@@ -57,8 +57,8 @@ Sea ${}\mathcal{A}{}$ una [[categoría abeliana]]. Un complejo de cadenas de ${}
         "col": 2
       },
       "label": "k_n",
-      "head": "hook",
-      "labelPosition": "above"
+      "labelPosition": "above",
+      "head": "hook"
     },
     {
       "id": "a7",
@@ -114,6 +114,10 @@ Sea ${}\mathcal{A}{}$ una [[categoría abeliana]]. Un complejo de cadenas de ${}
   ]
 }
 ```
-Como ${}d_{n}d_{n+1} = d_{n}m_{n+1}e_{n+1} = 0{}$, como ${}e_{n+1}{}$ es [[Epimorfismo|epi]], tenemos que ${}d_{n}m_{n+1} = 0{}$. Por la propiedad universal del [[núcleo]] y el hecho de que todo [[núcleo]] es [[Monomorfismo|mónico]] tenemos que existirá un único [[monomorfismo]] ${}\varphi_{n} : \text{Im}\,d_{n+1} \to \text{Ker}\,d_{n}{}$  que  mantenga la conmutatividad del diagrama anterior.
+Como ${}d_{n}d_{n+1} = d_{n}m_{n+1}e_{n+1} = 0{}$, como ${}e_{n+1}{}$ es [[Epimorfismo|epi]], tenemos que ${}d_{n}m_{n+1} = 0{}$. Por la propiedad universal del [[Núcleo]] existirá un único morfismo ${}\varphi_{n} : \text{Im}\,d_{n+1} \to \text{Ker}\,d_{n}{}$  tal que ${}k_{n}\varphi_{n} = m_{n+1}{}$. Ahora bien, sea ${}g:G\to \text{Im}\,d_{n+1}{}$ tal que ${}\varphi_{n}g = 0{}$. Tenemos que
+$$
+0 = k_{n}\varphi_{n} g = m_{n+1}g
+$$
+Como ${}m_{n+1}{}$ es [[monomorfismo]], ${}g=0{}$, luego ${}\varphi_{n}{}$ también lo es.
 
-Si no da lugar a confusión, no mencionaremos la [[categoría abeliana]] subyacente.
+Si no da lugar a confusión, no mencionaremos la [[Categoría abeliana]] subyacente.

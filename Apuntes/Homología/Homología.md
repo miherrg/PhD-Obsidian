@@ -1,20 +1,20 @@
 # Homología de cadenas
-Sea ${}\mathcal{A}{}$ una [[Categoría abeliana]], y ${}C{}$ un [[complejo de cadenas]]. Para cada ${}n \in \mathbb{Z}{}$ tenemos el siguiente diagrama conmutativo:
+Sea ${}\mathcal{A}{}$ una [[Categoría abeliana]], y ${}C{}$ un [[Complejo de cadenas]]. Para cada ${}n \in \mathbb{Z}{}$ tenemos el siguiente diagrama conmutativo:
 ```cd
 {
   "version": 1,
-  "rows": 2,
+  "rows": 3,
   "cols": 5,
   "cells": [
     {
       "row": 0,
       "col": 1,
-      "label": "\\text{Im}\\,d_{n+1}"
+      "label": "{\\text{Im}\\,d_{n+1}}"
     },
     {
       "row": 0,
       "col": 3,
-      "label": "\\text{Ker}\\, d_n"
+      "label": "{\\text{Ker}\\, d_n}"
     },
     {
       "row": 1,
@@ -30,6 +30,16 @@ Sea ${}\mathcal{A}{}$ una [[Categoría abeliana]], y ${}C{}$ un [[complejo de ca
       "row": 1,
       "col": 4,
       "label": "C_{n-1}"
+    },
+    {
+      "row": 2,
+      "col": 1,
+      "label": "\\text{Coker } d_{n+1}"
+    },
+    {
+      "row": 2,
+      "col": 3,
+      "label": "\\text{Im }d_n"
     }
   ],
   "arrows": [
@@ -121,18 +131,81 @@ Sea ${}\mathcal{A}{}$ una [[Categoría abeliana]], y ${}C{}$ un [[complejo de ca
       "label": "d_n",
       "head": "default",
       "lineStyle": "solid"
+    },
+    {
+      "id": "a1",
+      "from": {
+        "row": 1,
+        "col": 2
+      },
+      "to": {
+        "row": 2,
+        "col": 1
+      },
+      "label": "q_{n+1}",
+      "labelPosition": "right",
+      "head": "epi",
+      "lineStyle": "solid"
+    },
+    {
+      "id": "a2",
+      "from": {
+        "row": 1,
+        "col": 2
+      },
+      "to": {
+        "row": 2,
+        "col": 3
+      },
+      "label": "e_n",
+      "head": "epi",
+      "lineStyle": "solid"
+    },
+    {
+      "id": "a5",
+      "from": {
+        "row": 2,
+        "col": 1
+      },
+      "to": {
+        "row": 2,
+        "col": 3
+      },
+      "label": "\\psi_n",
+      "labelPosition": "above",
+      "head": "epi",
+      "lineStyle": "solid"
+    },
+    {
+      "id": "a3",
+      "from": {
+        "row": 2,
+        "col": 3
+      },
+      "to": {
+        "row": 1,
+        "col": 4
+      },
+      "label": "m_n",
+      "head": "hook",
+      "lineStyle": "solid"
     }
   ]
 }
 ```
 Definimos la *n-ésima* homología de ${}C{}$ como
 $$
-H_{n}(C) = \text{Coker}\, \varphi_{n}
+\begin{align}
+H_{n}(C)  & = \text{Coker}\, \varphi_{n} \\
+ & \cong \text{Ker}\, \psi_{n}
+\end{align}
+
 $$
+
 ## Proposición
 ${}H_{n}(-){}$ es un [[functor]] de ${}\text{Ch}(\mathcal{A}){}$ en ${}\mathcal{A}{}$.
 ### Demostración
-Por definición, ${}H_{n}(C) \in \mathcal{A}{}$. Veamos que dado un [[morfismo de cadenas]] ${}u: C \to D{}$, existe un morfismo ${}H_{n}(u) : H_{n}(C) \to H_{n}(D){}$ que cumple los axiomas functoriales.
+Por definición, ${}H_{n}(C) \in \mathcal{A}{}$. Veamos que dado un [[Morfismo de cadenas]] ${}u: C \to D{}$, existe un morfismo ${}H_{n}(u) : H_{n}(C) \to H_{n}(D){}$ que cumple los axiomas functoriales.
 #### 1. Para todo ${}u : A \to B{}$, existe ${}H_{n}(u){}$.
 Notemos que tenemos el siguiente diagrama conmutativo.
 ```cd
@@ -149,12 +222,12 @@ Notemos que tenemos el siguiente diagrama conmutativo.
     {
       "row": 1,
       "col": 0,
-      "label": "\\text{Im}\\, d_{n+1}"
+      "label": "{\\text{Im}\\, d_{n+1}}"
     },
     {
       "row": 1,
       "col": 1,
-      "label": "\\text{Ker}\\, d_n"
+      "label": "{\\text{Ker}\\, d_n}"
     },
     {
       "row": 2,
@@ -279,6 +352,7 @@ Notemos que tenemos el siguiente diagrama conmutativo.
       "lineStyle": "solid"
     },
     {
+      "id": "a20",
       "from": {
         "row": 1,
         "col": 1
@@ -287,10 +361,9 @@ Notemos que tenemos el siguiente diagrama conmutativo.
         "row": 2,
         "col": 2
       },
+      "label": "0",
       "head": "default",
-      "lineStyle": "solid",
-      "id": "a20",
-      "label": "0"
+      "lineStyle": "solid"
     },
     {
       "id": "a12",
@@ -482,6 +555,7 @@ Notemos que tenemos el siguiente diagrama conmutativo.
       "lineStyle": "solid"
     },
     {
+      "id": "a21",
       "from": {
         "row": 4,
         "col": 1
@@ -490,11 +564,10 @@ Notemos que tenemos el siguiente diagrama conmutativo.
         "row": 3,
         "col": 2
       },
-      "head": "default",
-      "lineStyle": "solid",
-      "id": "a21",
       "label": "0",
-      "labelPosition": "right"
+      "labelPosition": "right",
+      "head": "default",
+      "lineStyle": "solid"
     },
     {
       "id": "a9",
@@ -513,6 +586,7 @@ Notemos que tenemos el siguiente diagrama conmutativo.
   ]
 }
 ```
-Notemos que ${}\delta_{n} u_{n}k_{n} = u_{n-1}d_{n}k_{n} = u_{n-1}\, 0 = 0{}$. Por la propiedad universal del núcleo, ${}\exists!v_{n} : \text{Ker}\,d_{n}\to \text{Ker}\,\delta_{n}{}$ tal que ${}\tilde k_{n}v_{n} = u_{n}k_{n}{}$.
-Además, como el diagrama es conmuativo, ${}\tilde q_{n}v_{n}\varphi_{n}e_{n+1}=0 \circ \tilde e_{n+1}u_{n+1} = 0{}$, como ${}e_{n+1}{}$ es [[epimorfismo]], tenemos que ${}\tilde q_{n}v_{n}\varphi_{n} = 0{}$. Por tanto, por la propiedad universal del conúcleo, ${}\exists!w_{n} : H_{n}(A) \to H_{n}(B){}$ tal que ${}w_{n}q_{n} = \tilde q_{n}v_{n}{}$.
+Notemos que ${}\delta_{n} u_{n}k_{n} = u_{n-1}d_{n}k_{n} = u_{n-1}\, 0 = 0{}$. Por la propiedad universal del [[núcleo]], ${}\exists!v_{n} : \text{Ker}\,d_{n}\to \text{Ker}\,\delta_{n}{}$ tal que ${}\tilde k_{n}v_{n} = u_{n}k_{n}{}$.
+Además, como el diagrama es conmuativo, ${}\tilde q_{n}v_{n}\varphi_{n}e_{n+1}=0 \circ \tilde e_{n+1}u_{n+1} = 0{}$, como ${}e_{n+1}{}$ es [[Epimorfismo]], tenemos que ${}\tilde q_{n}v_{n}\varphi_{n} = 0{}$. Por tanto, por la propiedad universal del [[conúcleo]], ${}\exists!w_{n} : H_{n}(A) \to H_{n}(B){}$ tal que ${}w_{n}q_{n} = \tilde q_{n}v_{n}{}$.
 #### 2. ${}H_{n}(g \circ f) = H_{n}(g) \circ H_{n}(f), \; \forall f:A \to B,\; g:B\to C{}$
+**TODO**

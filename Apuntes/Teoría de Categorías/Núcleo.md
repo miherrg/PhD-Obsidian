@@ -1,4 +1,4 @@
-Sea ${}\mathcal{A}{}$ una [[categoría aditiva]] y ${} {}f\in \text{Hom}_{}(A, B){} {}$. El *núcleo* de $f$, es un objeto $K$, junto a un morfismo ${} {}k:K\to {}A$ tal que $fk = 0$ y es universal con esa propiedad. Es decir, dado cualquier morfismo ${}k' : K' \to A{}$ tal que ${}fk' = 0{}$, existe un único morfismo ${}u:K' \to K{}$ tal que el siguiente diagrama conmuta:
+Sea ${}\mathcal{A}{}$ una [[Categoría aditiva]] y ${} {}f\in \text{Hom}_{}(A, B){} {}$. El *núcleo* de $f$, es un objeto $K$, junto a un morfismo ${} {}k:K\to {}A$ tal que $fk = 0$ y es universal con esa propiedad. Es decir, dado cualquier morfismo ${}k' : K' \to A{}$ tal que ${}fk' = 0{}$, existe un único morfismo ${}u:K' \to K{}$ tal que el siguiente diagrama conmuta:
 ```cd
 {
   "version": 1,

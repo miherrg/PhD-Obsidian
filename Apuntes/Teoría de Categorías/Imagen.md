@@ -1,5 +1,5 @@
-Sea ${}\mathcal{A}{}$ una [[categoría aditiva]] y ${}f\in \text{Hom}_{}(A, B){}$. La imagen de $f$, es un objeto $\text{Im}f$, junto a un [[monomorfismo]] ${} {}m:\text{Im}f\to B{}$ cumpliendo la siguiente propiedad universal:
-1. Existe un [[epimorfismo]] ${}e: A \to \text{Im}f{}$ tal que ${}f = me{}$.
+Sea ${}\mathcal{A}{}$ una [[Categoría aditiva]] y ${}f\in \text{Hom}_{}(A, B){}$. La imagen de $f$, es un objeto $\text{Im}f$, junto a un [[Monomorfismo]] ${} {}m:\text{Im}f\to B{}$ cumpliendo la siguiente propiedad universal:
+1. Existe un [[Epimorfismo]] ${}e: A \to \text{Im}f{}$ tal que ${}f = me{}$.
 2. Para todo objeto ${}I{}$ con un epimorfismo ${}e' : A \to I{}$ y monomorfismo ${}m' : I \to B{}$  tales que ${}f = m'e'{}$ existe un único morfismo ${}v : \text{Im}f \to I{}$ tal que el siguiente diagrama conmuta:
 
 ```cd

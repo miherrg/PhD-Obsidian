@@ -1,4 +1,4 @@
-Una [[Categoría|categoría]] $\mathcal{A}$ es una *categoría preaditiva* si todo conjunto $\text{Hom}_\mathcal{A}(A,B)$ en $\mathcal{A}$ es un grupo abeliano de tal forma que la composición distribuye con la suma. Es decir, dado el siguiente diagrama:
+Una [[Categoría|categoría]] $\mathcal{A}$ es una *categoría preaditiva* si todo $\text{Hom}_\mathcal{A}(A,B)$ en $\mathcal{A}$ es un grupo abeliano de tal forma que la composición distribuye con la suma. Es decir, dado el siguiente diagrama:
 
 ```cd
 {

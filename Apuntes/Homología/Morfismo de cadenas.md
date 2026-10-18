@@ -1,4 +1,4 @@
-orfismos de cadenas
+# Morfismos de cadenas
 Sean C y D dos [[Complejo de cadenas|complejos de cadenas]]. Un morfismo ${}u:C\to D{}$ de complejos de cadenas es una familia ${}\{ u_{n} : C_{n} \to D_{n}\}_{n \in \mathbb{Z}}{}$ de morfismos tal que el siguiente diagrama conmuta:
 ```cd
 {
@@ -215,15 +215,15 @@ Sean C y D dos [[Complejo de cadenas|complejos de cadenas]]. Un morfismo ${}u:C\
 }
 ```
 ## Proposición
-Fijada una [[categoría abeliana]] ${}\mathcal{A}{}$,  la clase de [[Complejo de cadenas|complejos de cadenas]] junto a los morfismos de cadenas es una [[categoría abeliana]], denotada ${}\text{Ch}(\mathcal{A}){}$.
+Fijada una [[Categoría abeliana]] ${}\mathcal{A}{}$,  la clase de [[Complejo de cadenas|complejos de cadenas]] junto a los morfismos de cadenas es una [[Categoría abeliana]], denotada ${}\text{Ch}(\mathcal{A}){}$.
 ### Demostración
-#### ${}\text{Ch}(\mathcal{A}){}$ es una [[categoría]].
-Sean ${}A, B, C,D$ complejos de cadenas y ${}f:A \to B{}$, ${}g:B\to C{}$ y ${}h : C \to D{}$ morfismos de cadenas. Como ${}\mathcal{A}{}$ es una [[categoría abeliana]],  notemos que ${}\forall n \in \mathbb{Z}{}$, existen las composiciones, ${}h(gf) = (hg)f{}$, ${}\exists 1_{C_{n}} : C_{n}\to C_{n}{}$ y ${}1_{C_{n}} \circ g_{n} = g_{n} \circ 1_{B_{n}}{}$. Por tanto:
+#### ${}\text{Ch}(\mathcal{A}){}$ es una [[Categoría]].
+Sean ${}A, B, C,D$ complejos de cadenas y ${}f:A \to B{}$, ${}g:B\to C{}$ y ${}h : C \to D{}$ morfismos de cadenas. Como ${}\mathcal{A}{}$ es una [[Categoría abeliana]],  notemos que ${}\forall n \in \mathbb{Z}{}$, existen las composiciones, ${}h(gf) = (hg)f{}$, ${}\exists 1_{C_{n}} : C_{n}\to C_{n}{}$ y ${}1_{C_{n}} \circ g_{n} = g_{n} \circ 1_{B_{n}}{}$. Por tanto:
 - La composición de dos morfismos de cadenas ${}v \circ u := \{ v_{n}\circ u_{n} \}_{n \in \mathbb{Z}}{}$ está bien definida y es asociativa.
-- Para todo [[complejo de cadenas]] ${}C{}$, existe el morfismo identidad ${}1_{C}:=\{ 1_{C_{n}} \}_{n\in \mathbb{Z}}{}$  y estos morfismos identidad cumplen las leyes de identidad.
-Por tanto ${}\text{Ch}(\mathcal{A}){}$ es una [[categoría]].
+- Para todo [[Complejo de cadenas]] ${}C{}$, existe el morfismo identidad ${}1_{C}:=\{ 1_{C_{n}} \}_{n\in \mathbb{Z}}{}$  y estos morfismos identidad cumplen las leyes de identidad.
+Por tanto ${}\text{Ch}(\mathcal{A}){}$ es una [[Categoría]].
 
-#### ${}\text{Ch}(\mathcal{A}){}$ es [[categoría preaditiva|preaditiva]].
+#### ${}\text{Ch}(\mathcal{A}){}$ es [[Categoría preaditiva|preaditiva]].
 Análogamente, como ${}\mathcal{A}{}$ es abeliana, en concreto es aditiva, y para todo ${}n \in \mathbb{Z}{}$ se cumple que si:
 ```cd
 {
@@ -306,7 +306,7 @@ Análogamente, como ${}\mathcal{A}{}$ es abeliana, en concreto es aditiva, y par
   ]
 }
 ```
-entonces ${}h_{n}(g_{n} + g'_{n})f_{n}{}$. Por tanto, definiendo la suma de morfismos de cadenas ${}u+v := \{ u_{n}+v_{n} \}_{n\in \mathbb{Z}}{}$, tenemos inmediatamente que ${}\text{Hom}_{\text{Ch}(\mathcal{A})}(A, B){}$ es un grupo abeliano para complejos ${}A, B{}$ cualesquiera y la composición distribuye con la suma. Por tanto es una [[categoría preaditiva]].
+entonces ${}h_{n}(g_{n} + g'_{n})f_{n}{}$. Por tanto, definiendo la suma de morfismos de cadenas ${}u+v := \{ u_{n}+v_{n} \}_{n\in \mathbb{Z}}{}$, tenemos inmediatamente que ${}\text{Hom}_{\text{Ch}(\mathcal{A})}(A, B){}$ es un grupo abeliano para complejos ${}A, B{}$ cualesquiera y la composición distribuye con la suma. Por tanto es una [[Categoría preaditiva]].
 #### $\text{Ch}(\mathcal{A})$ es [[Categoría aditiva|aditiva]]
 Es inmediato ver que el morfismo de cadenas trivial ${}0{}$ es al mismo tiempo un [[objeto inicial]] y [[objeto terminal|terminal]].
 Sean ${}A,B,P\in\text{Ch}(\mathcal{A}){}$ y morfismos de cadenas ${}f:P\to A{}$ y ${}g:P\to B{}$.
@@ -760,9 +760,9 @@ Por tanto, tenemos determinado un único morfismo de cadenas ${}h := \{ h_{n} \}
 }
 ```
 Luego ${}A\times B{}$ es precisamente el [[producto]] de ${}A{}$ y ${}B{}$.
-Por tanto ${}\text{Ch}(\mathcal{A}){}$ es una [[categoría aditiva]].
+Por tanto ${}\text{Ch}(\mathcal{A}){}$ es una [[Categoría aditiva]].
 #### ${}\text{Ch}(\mathcal{A}){}$ es [[Categoría abeliana|abeliana]].
-##### 1. Todo morfismo tiene [[núcleo]] y [[conúcleo]].
+##### 1. Todo morfismo tiene [[Núcleo]] y [[Conúcleo]].
 Sean ${}C, D{}$ complejos de cadenas y ${}u:C \to D{}$ un morfismo de cadenas
 Como ${}\mathcal{A}{}$ es abeliana, para todo ${}n \in \mathbb{Z}{}$ tenemos el siguiente diagrama conmutativo:
 ```cd
@@ -814,6 +814,7 @@ Como ${}\mathcal{A}{}$ es abeliana, para todo ${}n \in \mathbb{Z}{}$ tenemos el 
   ],
   "arrows": [
     {
+      "id": "a3",
       "from": {
         "row": 0,
         "col": 0
@@ -823,10 +824,10 @@ Como ${}\mathcal{A}{}$ es abeliana, para todo ${}n \in \mathbb{Z}{}$ tenemos el 
         "col": 0
       },
       "label": "k_n",
-      "head": "hook",
-      "id": "a3"
+      "head": "hook"
     },
     {
+      "id": "a4",
       "from": {
         "row": 0,
         "col": 1
@@ -836,10 +837,10 @@ Como ${}\mathcal{A}{}$ es abeliana, para todo ${}n \in \mathbb{Z}{}$ tenemos el 
         "col": 1
       },
       "label": "k_{n-1}",
-      "head": "hook",
-      "id": "a4"
+      "head": "hook"
     },
     {
+      "id": "a5",
       "from": {
         "row": 1,
         "col": 0
@@ -848,10 +849,10 @@ Como ${}\mathcal{A}{}$ es abeliana, para todo ${}n \in \mathbb{Z}{}$ tenemos el 
         "row": 1,
         "col": 1
       },
-      "label": "d_n",
-      "id": "a5"
+      "label": "d_n"
     },
     {
+      "id": "a6",
       "from": {
         "row": 1,
         "col": 0
@@ -860,10 +861,10 @@ Como ${}\mathcal{A}{}$ es abeliana, para todo ${}n \in \mathbb{Z}{}$ tenemos el 
         "row": 2,
         "col": 0
       },
-      "label": "u_n",
-      "id": "a6"
+      "label": "u_n"
     },
     {
+      "id": "a7",
       "from": {
         "row": 1,
         "col": 1
@@ -872,10 +873,10 @@ Como ${}\mathcal{A}{}$ es abeliana, para todo ${}n \in \mathbb{Z}{}$ tenemos el 
         "row": 2,
         "col": 1
       },
-      "label": "u_{n-1}",
-      "id": "a7"
+      "label": "u_{n-1}"
     },
     {
+      "id": "a8",
       "from": {
         "row": 2,
         "col": 0
@@ -884,10 +885,10 @@ Como ${}\mathcal{A}{}$ es abeliana, para todo ${}n \in \mathbb{Z}{}$ tenemos el 
         "row": 2,
         "col": 1
       },
-      "label": "\\delta_n",
-      "id": "a8"
+      "label": "\\delta_n"
     },
     {
+      "id": "a9",
       "from": {
         "row": 2,
         "col": 0
@@ -897,10 +898,10 @@ Como ${}\mathcal{A}{}$ es abeliana, para todo ${}n \in \mathbb{Z}{}$ tenemos el 
         "col": 0
       },
       "label": "q_n",
-      "head": "epi",
-      "id": "a9"
+      "head": "epi"
     },
     {
+      "id": "a10",
       "from": {
         "row": 2,
         "col": 1
@@ -910,13 +911,12 @@ Como ${}\mathcal{A}{}$ es abeliana, para todo ${}n \in \mathbb{Z}{}$ tenemos el 
         "col": 1
       },
       "label": "q_{n-1}",
-      "head": "epi",
-      "id": "a10"
+      "head": "epi"
     }
   ]
 }
 ```
-Notemos que ${}u_{n-1}(d_{n}k_{n}) = (u_{n-1}d_{n})k_{n} = (\delta_{n}u_{n})k_{n} = \delta_{n}(u_{n}k_{n}) = \delta_{n}\, 0{} = 0$. Por tanto, por la propiedad universal del [[núcleo]], ${}\exists! \varphi_{n}:\text{Ker}\,u_{n}\to \text{Ker}\,u_{n-1}{}$. Además, ${}(q_{n-1}\delta_{n})u_{n}= q_{n-1}(\delta_{n}u_{n}) = q_{n-1}(u_{n-1}d_{n}) = (q_{n-1}u_{n-1})d_{n }=0d_{n} = 0{}$. Por tanto,  por la propiedad universal del [[conúcleo]], ${}\exists! \psi_{n}:\text{Coker}\,u_{n}\to \text{Coker}\,u_{n-1}{}$.
+Notemos que ${}u_{n-1}(d_{n}k_{n}) = (u_{n-1}d_{n})k_{n} = (\delta_{n}u_{n})k_{n} = \delta_{n}(u_{n}k_{n}) = \delta_{n}\, 0{} = 0$. Por tanto, por la propiedad universal del [[Núcleo]], ${}\exists! \varphi_{n}:\text{Ker}\,u_{n}\to \text{Ker}\,u_{n-1}{}$. Además, ${}(q_{n-1}\delta_{n})u_{n}= q_{n-1}(\delta_{n}u_{n}) = q_{n-1}(u_{n-1}d_{n}) = (q_{n-1}u_{n-1})d_{n }=0d_{n} = 0{}$. Por tanto,  por la propiedad universal del [[Conúcleo]], ${}\exists! \psi_{n}:\text{Coker}\,u_{n}\to \text{Coker}\,u_{n-1}{}$.
 Por tanto tenemos el siguiente diagrama conmutativo:
 ```cd
 {
@@ -1433,21 +1433,21 @@ Por tanto tenemos el siguiente diagrama conmutativo:
   ]
 }
 ```
-Comprobemos ahora que, efectivamente, ${}\text{Ker}\,u{}$ y ${}\text{Coker}\,u{}$ son complejos de cadenas y son el [[núcleo]] y el [[conúcleo]] de ${}u{}$,  respectivamente. En efecto, notemos que 
+Comprobemos ahora que, efectivamente, ${}\text{Ker}\,u{}$ y ${}\text{Coker}\,u{}$ son complejos de cadenas y son el [[Núcleo]] y el [[Conúcleo]] de ${}u{}$,  respectivamente. En efecto, notemos que 
 $$
 k_{n-1} \varphi_{n}\varphi_{{n+1}} = d_{n}d_{n+1}k_{n+1} = 0\,k_{n+1} = 0
 $$
-Además, como ${}k_{n-1}{}$ es mono, concluimos que ${}\varphi_{n}\varphi_{n+1} = 0{}$, luego ${}\text{Ker}\,u{}$ es un [[complejo de cadenas]]. Análogamente,
+Además, como ${}k_{n-1}{}$ es mono, concluimos que ${}\varphi_{n}\varphi_{n+1} = 0{}$, luego ${}\text{Ker}\,u{}$ es un [[Complejo de cadenas]]. Análogamente,
 $$
 \psi_{n}\psi_{n+1}q_{n+1} = q_{n-1}\delta_{n}\delta_{n+1} = q_{n-1}\,0 = 0
 $$
-Como ${}q_{n+1}{}$ es epi, concluimos que ${}\psi_{n}\psi_{n+1} = 0{}$ y por tanto ${}\text{Coker}\,u{}$ es un [[complejo de cadenas]].
-Supongamos ahora que existen complejos de cadenas ${}K, Q{}$ con morfismos de cadenas ${}k':K\to C{}$ y ${}q' :D \to Q{}$ tales que ${}uk' = 0{}$ y ${}q'u =0{}$. Notemos que, como para cada ${}n\in \mathbb{Z}{}$ ${}u_{n}k'_{n} = 0{}$ y ${}q'_{n}u_{n} = 0{}$, por las propiedades universales del [[núcleo]] y el [[conúcleo]] existirán ${}\iota_{n} : K_{n}\to \text{Ker}\,u_{n}{}$ y ${}\pi_{n} : \text{Coker}\,u_{n}\to Q_{n}{}$ *únicos* tales que ${}k_{n}\iota_{n} = k'_{n}{}$ y ${}\pi_{n}q_{n} = q'_{n}{}$. Luego los morfismos de cadenas ${}\iota := \{ \iota_{n} \}_{n\in \mathbb{Z}}, \; \pi:=\{ \pi_{n} \}_{n\in \mathbb{Z}}{}$ quedan definidos de forma única y cumplen que ${}k\iota = k'{}$ y ${}\pi q = q'{}$. Por tanto son el [[núcleo]] y el [[conúcleo]] de ${}u{}$.
-##### 2. Todo [[monomorfismo]] de ${}\text{Ch}(\mathcal{A}){}$ es el [[núcleo]] de su [[conúcleo]]
-Sean ${}A, B{}$ complejos de cadenas y ${}f:A\to B{}$ un [[monomorfismo]]. Veamos que dado ${}n \in \mathbb{Z}{}$, ${}f_{n} : A_{n}\to B_{n}{}$ también es un [[monomorfismo]]. Sea ${}g_{n} : A'_{n} \to A_{n}{}$ un morfismo tal que ${}f_{n}g_{n} = 0{}$. Para ello, definimos el [[complejo de cadenas]] ${}C{}$ y el morfismo de cadenas ${}g:C \to A{}$, de tal forma que si ${}k = n{}$, entonces ${}g_{k} = g_{n}{}$ y ${}g_{k}= 0{}$ en otro caso.
-Por construcción, tenemos que ${}fg = 0{}$. Como ${}f{}$ es mónico, ${}g = 0{}$. En particular ${}g_{n} = 0{}$, luego ${}f_{n}{}$ también es un [[monomorfismo]].
+Como ${}q_{n+1}{}$ es epi, concluimos que ${}\psi_{n}\psi_{n+1} = 0{}$ y por tanto ${}\text{Coker}\,u{}$ es un [[Complejo de cadenas]].
+Supongamos ahora que existen complejos de cadenas ${}K, Q{}$ con morfismos de cadenas ${}k':K\to C{}$ y ${}q' :D \to Q{}$ tales que ${}uk' = 0{}$ y ${}q'u =0{}$. Notemos que, como para cada ${}n\in \mathbb{Z}{}$ ${}u_{n}k'_{n} = 0{}$ y ${}q'_{n}u_{n} = 0{}$, por las propiedades universales del [[Núcleo]] y el [[Conúcleo]] existirán ${}\iota_{n} : K_{n}\to \text{Ker}\,u_{n}{}$ y ${}\pi_{n} : \text{Coker}\,u_{n}\to Q_{n}{}$ *únicos* tales que ${}k_{n}\iota_{n} = k'_{n}{}$ y ${}\pi_{n}q_{n} = q'_{n}{}$. Luego los morfismos de cadenas ${}\iota := \{ \iota_{n} \}_{n\in \mathbb{Z}}, \; \pi:=\{ \pi_{n} \}_{n\in \mathbb{Z}}{}$ quedan definidos de forma única y cumplen que ${}k\iota = k'{}$ y ${}\pi q = q'{}$. Por tanto son el [[Núcleo]] y el [[Conúcleo]] de ${}u{}$.
+##### 2. Todo [[Monomorfismo]] de ${}\text{Ch}(\mathcal{A}){}$ es el [[Núcleo]] de su [[Conúcleo]]
+Sean ${}A, B{}$ complejos de cadenas y ${}f:A\to B{}$ un [[Monomorfismo]]. Veamos que dado ${}n \in \mathbb{Z}{}$, ${}f_{n} : A_{n}\to B_{n}{}$ también es un [[Monomorfismo]]. Sea ${}g_{n} : A'_{n} \to A_{n}{}$ un morfismo tal que ${}f_{n}g_{n} = 0{}$. Para ello, definimos el [[Complejo de cadenas]] ${}C{}$ y el morfismo de cadenas ${}g:C \to A{}$, de tal forma que si ${}k = n{}$, entonces ${}g_{k} = g_{n}{}$ y ${}g_{k}= 0{}$ en otro caso.
+Por construcción, tenemos que ${}fg = 0{}$. Como ${}f{}$ es mónico, ${}g = 0{}$. En particular ${}g_{n} = 0{}$, luego ${}f_{n}{}$ también es un [[Monomorfismo]].
 
-Ahora bien, notemos que dado un [[complejo de cadenas]] ${}C{}$ y un morfismo de cadenas ${}g : C \to B{}$ tal que ${}qg = 0{}$, donde ${}q : B \to \text{Coker}\,f{}$. Como ${}\mathcal{A}{}$ es una [[categoría abeliana]], tenemos que ${}f_{n}{}$ es el [[núcleo]] de su [[conúcleo]] ${}\forall n \in \mathbb{Z}{}$ y por tanto existirá un único morfismo ${}u_{n} : C_{n} \to A_{n}{}$ tal que el siguiente diagrama conmute:
+Ahora bien, notemos que dado un [[Complejo de cadenas]] ${}C{}$ y un morfismo de cadenas ${}g : C \to B{}$ tal que ${}qg = 0{}$, donde ${}q : B \to \text{Coker}\,f{}$. Como ${}\mathcal{A}{}$ es una [[Categoría abeliana]], tenemos que ${}f_{n}{}$ es el [[Núcleo]] de su [[Conúcleo]] ${}\forall n \in \mathbb{Z}{}$ y por tanto existirá un único morfismo ${}u_{n} : C_{n} \to A_{n}{}$ tal que el siguiente diagrama conmute:
 ```cd
 {
   "version": 1,
@@ -1569,12 +1569,12 @@ Ahora bien, notemos que dado un [[complejo de cadenas]] ${}C{}$ y un morfismo de
   ]
 }
 ```
-Por tanto, tenemos que existe un único morfismo de cadenas ${}u := \{ u_{n} \}_{n\in \mathbb{Z}}:C \to A{}$ tal que ${}fu = g{}$, es decir, ${}f{}$ es el [[núcleo]] de ${}q{}$.
-##### 3. Todo [[epimorfismo]] de ${}\text{Ch}(\mathcal{A}){}$ es el [[conúcleo]] de su [[núcleo]]
-Sean ${}A, B{}$ complejos de cadenas y ${}f:A\to B{}$ un [[epimorfismo]]. Veamos que dado ${}n \in \mathbb{Z}{}$, ${}f_{n} : A_{n}\to B_{n}{}$ también es un [[epimorfismo]]. Sea ${}g_{n} : B_{n} \to B'_{n}{}$ un morfismo tal que ${}g_{n}f_{n} = 0{}$. Para ello, definimos el [[complejo de cadenas]] ${}C{}$ y el morfismo de cadenas ${} {}g:B \to C{} {}$, de tal forma que si ${}k = n{}$, entonces ${}g_{k} = g_{n}{}$ y ${}g_{k}= 0{}$ en otro caso.
-Por construcción, tenemos que ${} gf= 0{} {}$. Como ${}f{}$ es epi, ${}g = 0{}$. En particular ${}g_{n} = 0{}$, luego ${}f_{n}{}$ también es un [[epimorfismo]].
+Por tanto, tenemos que existe un único morfismo de cadenas ${}u := \{ u_{n} \}_{n\in \mathbb{Z}}:C \to A{}$ tal que ${}fu = g{}$, es decir, ${}f{}$ es el [[Núcleo]] de ${}q{}$.
+##### 3. Todo [[Epimorfismo]] de ${}\text{Ch}(\mathcal{A}){}$ es el [[Conúcleo]] de su [[Núcleo]]
+Sean ${}A, B{}$ complejos de cadenas y ${}f:A\to B{}$ un [[Epimorfismo]]. Veamos que dado ${}n \in \mathbb{Z}{}$, ${}f_{n} : A_{n}\to B_{n}{}$ también es un [[Epimorfismo]]. Sea ${}g_{n} : B_{n} \to B'_{n}{}$ un morfismo tal que ${}g_{n}f_{n} = 0{}$. Para ello, definimos el [[Complejo de cadenas]] ${}C{}$ y el morfismo de cadenas ${} {}g:B \to C{} {}$, de tal forma que si ${}k = n{}$, entonces ${}g_{k} = g_{n}{}$ y ${}g_{k}= 0{}$ en otro caso.
+Por construcción, tenemos que ${} gf= 0{} {}$. Como ${}f{}$ es epi, ${}g = 0{}$. En particular ${}g_{n} = 0{}$, luego ${}f_{n}{}$ también es un [[Epimorfismo]].
 
-Ahora bien, notemos que dado un [[complejo de cadenas]] ${}C{}$ y un morfismo de cadenas ${} {}g : A \to C{} {}$ tal que ${} gk= 0{}$, donde ${} k: \text{Ker}\,f \to A {}$. Como ${}\mathcal{A}{}$ es una [[categoría abeliana]], tenemos que ${}f_{n}{}$ es el [[conúcleo]] de su [[núcleo]] ${}\forall n \in \mathbb{Z}{}$ y por tanto existirá un único morfismo ${}u_{n} : B_{n} \to C_{n}{}$ tal que el siguiente diagrama conmute:
+Ahora bien, notemos que dado un [[Complejo de cadenas]] ${}C{}$ y un morfismo de cadenas ${} {}g : A \to C{} {}$ tal que ${} gk= 0{}$, donde ${} k: \text{Ker}\,f \to A {}$. Como ${}\mathcal{A}{}$ es una [[Categoría abeliana]], tenemos que ${}f_{n}{}$ es el [[Conúcleo]] de su [[Núcleo]] ${}\forall n \in \mathbb{Z}{}$ y por tanto existirá un único morfismo ${}u_{n} : B_{n} \to C_{n}{}$ tal que el siguiente diagrama conmute:
 ```cd
 {
   "version": 1,
@@ -1699,6 +1699,6 @@ Ahora bien, notemos que dado un [[complejo de cadenas]] ${}C{}$ y un morfismo de
 }
 ```
 
-Por tanto, tenemos que existe un único morfismo de cadenas ${} {}u := \{ u_{n} \}_{n\in \mathbb{Z}}:B \to C{} {}$ tal que ${} {}uf = g{} {}$, es decir, ${}f{}$ es el [[conúcleo]] de ${}q{}$.
+Por tanto, tenemos que existe un único morfismo de cadenas ${} {}u := \{ u_{n} \}_{n\in \mathbb{Z}}:B \to C{} {}$ tal que ${} {}uf = g{} {}$, es decir, ${}f{}$ es el [[Conúcleo]] de ${}q{}$.
 
-Por tanto, tenemos que ${}\text{Ch}(\mathcal{A}){}$ es una [[categoría abeliana]].
+Por tanto, tenemos que ${}\text{Ch}(\mathcal{A}){}$ es una [[Categoría abeliana]].

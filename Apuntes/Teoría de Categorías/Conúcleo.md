@@ -1,4 +1,4 @@
-Sea ${}\mathcal{A}{}$ una [[categoría aditiva]] y ${}f\in \text{Hom}_{}(A, B){}$. El *conúcleo* de $f$, es un objeto $Q$, junto a un morfismo ${} {}q:B\to Q{}$ tal que ${} qf{}  = 0 {}$ y es universal con esa propiedad. Es decir, dado cualquier morfismo ${} {}q' : B \to Q'{} {}$ tal que ${} {}q'f = 0{} {}$, existe un único morfismo ${}u:Q \to Q'{}$ tal que el siguiente diagrama conmuta:
+Sea ${}\mathcal{A}{}$ una [[Categoría aditiva]] y ${}f\in \text{Hom}_{}(A, B){}$. El *conúcleo* de $f$, es un objeto $Q$, junto a un morfismo ${} {}q:B\to Q{}$ tal que ${} qf{}  = 0 {}$ y es universal con esa propiedad. Es decir, dado cualquier morfismo ${} {}q' : B \to Q'{} {}$ tal que ${} {}q'f = 0{} {}$, existe un único morfismo ${}u:Q \to Q'{}$ tal que el siguiente diagrama conmuta:
 ```cd
 {
   "version": 1,
@@ -120,4 +120,4 @@ Sea ${}\mathcal{A}{}$ una [[categoría aditiva]] y ${}f\in \text{Hom}_{}(A, B){}
   ]
 }
 ```
-Es el objeto dual del [[núcleo]].
+Es el objeto dual del [[Núcleo]].
